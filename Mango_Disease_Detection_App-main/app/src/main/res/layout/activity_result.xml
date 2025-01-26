@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawerLayout"
+    tools:context=".ResultActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ResultActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="275dp"
+                    android:layout_height="326dp"
+                    android:src="@drawable/baseline_image_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_disease_type"
+                    android:layout_width="240sp"
+                    android:layout_height="43sp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="start|center_vertical"
+                    android:text="Disease type"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@id/tv_disease_type_title"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/tv_dignosis"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70sp"
+                    android:layout_marginEnd="50sp"
+                    android:gravity="start|center_vertical"
+                    android:text="diagnosis"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.482"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_dignosis_title" />
+
+                <TextView
+                    android:id="@+id/tv_symptoms_title"
+                    android:layout_width="127sp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="12sp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Symptoms :"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+                <TextView
+                    android:id="@+id/tv_dignosis_title"
+                    android:layout_width="127sp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="12sp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Daignosis :"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_symptoms" />
+
+                <TextView
+                    android:id="@+id/tv_disease_type_title"
+                    android:layout_width="127sp"
+                    android:layout_height="43sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Diseas Type :"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/tv_symptoms"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70sp"
+                    android:layout_marginEnd="50sp"
+                    android:gravity="start|center_vertical"
+                    android:text="Symptoms"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.482"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_symptoms_title" />
+
+                <TextView
+                    android:id="@+id/tv_precautions"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70sp"
+                    android:layout_marginEnd="50sp"
+                    android:gravity="start|center_vertical"
+                    android:text="Precautions"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.482"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_precautions_title" />
+
+                <TextView
+                    android:id="@+id/tv_precautions_title"
+                    android:layout_width="127sp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="12sp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Precautions :"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_dignosis" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginEnd="50sp"
+                    android:gravity="start|center_vertical"
+                    android:text="Description"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.09"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description_title" />
+
+                <TextView
+                    android:id="@+id/tv_description_title"
+                    android:layout_width="127sp"
+                    android:layout_height="43sp"
+                    android:layout_marginStart="12sp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Description :"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_disease_type_title" />
+
+                <TextView
+                    android:id="@+id/loading"
+                    android:layout_width="294dp"
+                    android:layout_height="93dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Loading ....."
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

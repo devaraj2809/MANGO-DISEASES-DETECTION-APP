@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mango_Disease_Detection_App</string>
+    <string name="predicting">Predicting ...</string>
+</resources>
